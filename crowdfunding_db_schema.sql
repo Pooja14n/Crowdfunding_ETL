@@ -3,26 +3,6 @@
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 
-CREATE TABLE "campaign" (
-    "cf_id" int   NOT NULL,
-    "contact_id" int   NOT NULL,
-    "company_name" varchar(100)   NOT NULL,
-    "description" text   NOT NULL,
-    "goal" float   NOT NULL,
-    "pledged" float   NOT NULL,
-    "outcome" varchar(50)   NOT NULL,
-    "backers_count" int   NOT NULL,
-    "country" varchar(50)   NOT NULL,
-    "currency" varchar(50)   NOT NULL,
-    "launched_date" date   NOT NULL,
-    "end_date" date   NOT NULL,
-    "category_id" varchar(50)   NOT NULL,
-    "subcategory_id" varchar(50)   NOT NULL,
-    CONSTRAINT "pk_campaign" PRIMARY KEY (
-        "cf_id"
-     )
-);
-
 CREATE TABLE "contacts" (
     "contact_id" int   NOT NULL,
     "first_name" varchar(100)   NOT NULL,
@@ -46,6 +26,26 @@ CREATE TABLE "subcategory" (
     "subcategory" varchar(100)   NOT NULL,
     CONSTRAINT "pk_subcategory" PRIMARY KEY (
         "subcategory_id"
+     )
+);
+
+CREATE TABLE "campaign" (
+    "cf_id" int   NOT NULL,
+    "contact_id" int   NOT NULL,
+    "company_name" varchar(100)   NOT NULL,
+    "description" text   NOT NULL,
+    "goal" float   NOT NULL,
+    "pledged" float   NOT NULL,
+    "outcome" varchar(50)   NOT NULL,
+    "backers_count" int   NOT NULL,
+    "country" varchar(50)   NOT NULL,
+    "currency" varchar(50)   NOT NULL,
+    "launched_date" date   NOT NULL,
+    "end_date" date   NOT NULL,
+    "category_id" varchar(50)   NOT NULL,
+    "subcategory_id" varchar(50)   NOT NULL,
+    CONSTRAINT "pk_campaign" PRIMARY KEY (
+        "cf_id"
      )
 );
 
