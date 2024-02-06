@@ -91,5 +91,14 @@ Note: Remember to specify the data types, primary keys, foreign keys, and other 
 ![contacts_query](https://github.com/Pooja14n/Crowdfunding_ETL/assets/144713762/99b2782c-fae8-4e59-976e-10512a2b4a66)
 ![category_query](https://github.com/Pooja14n/Crowdfunding_ETL/assets/144713762/3de4c995-7bde-4b34-9e7a-06ca14291a13)
 
+# References
+Referred to various class activity exercises, got support from Assistant Instructor, and websites for: Pandas Documentation, Python Documentation, and Stack Overflow.
 
-
+# Files submitted including this README File
+1. Main Folder -> Crowdfunding_ETL
+2. Resources Folder (contains the data required for the import as well as the exported CSV Files) -> contacts.xlsx, crowdfunding.xlsx, campaign.csv, contacts.csv, category.csv, subcategory.csv.
+3. ETL_Mini_Project_crowdfunding_db_Analysis.ipynb (contains the main code for Analysis)
+4. crowdfunding_db_schema.sql (contains `CREATE` query for all the 4 tables)
+5. Select_statements.sql (contains `SELECT` query for all the 4 tables created)
+6. QuickDBD-crowdfunding_db_ERD.png (contains ERD sketch of the tables using QuickDBD)
+7. Screenshots Folder (contains screenshots for the queries run on pgadmin).
