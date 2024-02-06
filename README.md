@@ -11,14 +11,15 @@ The requirements for this mini project are divided into the following subsection
 4. Create the Crowdfunding Database
 
 # 1. Create the Category and Subcategory DataFrames
-1. Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:
+1. Extract and transform the `crowdfunding.xlsx` Excel data to create a category DataFrame that has the following columns:
   a. A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
   b. A "category" column that contains only the category titles
   c. The following image shows this category DataFrame:
 ![1](https://github.com/Pooja14n/Crowdfunding_ETL/assets/144713762/711233aa-8e75-4182-b91b-82f5402be546)
 
 2. Export the category DataFrame as `category.csv` and save it to GitHub repository.
-3. Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns:
+   
+3. Extract and transform the `crowdfunding.xlsx` Excel data to create a subcategory DataFrame that has the following columns:
   a. A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
   b. A "subcategory" column that contains only the subcategory titles
   c. The following image shows this subcategory DataFrame:
@@ -27,7 +28,7 @@ The requirements for this mini project are divided into the following subsection
 4. Export the subcategory DataFrame as `subcategory.csv` and save it to GitHub repository.
 
 # 2. Create the Campaign DataFrame
-1. Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame has the following columns:
+1. Extract and transform the `crowdfunding.xlsx` Excel data to create a campaign DataFrame has the following columns:
   a. The "cf_id" column
   b. The "contact_id" column
   c. The "company_name" column
@@ -43,5 +44,47 @@ The requirements for this mini project are divided into the following subsection
   m. The "category_id" column, with unique identification numbers matching those in the "category_id" column of the category DataFrame
   n. The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
   o. The following image shows this campaign DataFrame:
+![3](https://github.com/Pooja14n/Crowdfunding_ETL/assets/144713762/71a7f5ef-fa3c-4bc2-8023-dbd8d0393f2f)
 
 2. Export the campaign DataFrame as `campaign.csv` and save it to GitHub repository.
+
+
+# 3. Create the Contacts DataFrame
+1. Choose one of the following two options for extracting and transforming the data from the `contacts.xlsx` Excel data:
+  a. Option 1: Use Python dictionary methods.
+  b. Option 2: Use regular expressions.
+
+2. Option 1 is chosen; and, the following steps are to be completed:
+  a. Import the `contacts.xlsx` file into a DataFrame.
+  b. Iterate through the DataFrame, converting each row to a dictionary.
+  c. Iterate through each dictionary, doing the following:
+    i. Extract the dictionary values from the keys by using a Python list comprehension.
+    ii. Add the values for each row to a new list.
+  d. Create a new DataFrame that contains the extracted data.
+  e. Split each "name" column value into a first and last name, and place each in a new column.
+  f. Clean and export the DataFrame as `contacts.csv` and save it to your GitHub repository.
+
+3. The final DataFrame is as shown in following image:
+![4](https://github.com/Pooja14n/Crowdfunding_ETL/assets/144713762/be34a02a-d03d-442c-98e1-1e26e89e7637)
+
+
+# 4. Create the Crowdfunding Database
+1. Inspect the four CSV files, and then sketch an ERD of the tables by using `QuickDBDLinks` to an external site.
+
+2. Use the information from the ERD to create a table schema for each CSV file.
+Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.
+
+3. Save the database schema as a Postgres file named `crowdfunding_db_schema.sql`, and save it to your GitHub repository.
+
+4. Create a new Postgres database, named `crowdfunding_db`.
+
+5. Using the database schema, create the tables in the correct order to handle the foreign keys.
+
+6. Verify the table creation by running a `SELECT` statement for each table.
+
+7. Import each CSV file into its corresponding SQL table.
+
+8. Verify that each table has the correct data by running a `SELECT` statement for each.
+
+
+
