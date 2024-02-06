@@ -73,8 +73,9 @@ The requirements for this mini project are divided into the following subsection
 
 2. Use the information from the ERD to create a table schema for each CSV file.
 Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.
+![QuickDBD-crowdfunding_db_ERD](https://github.com/Pooja14n/Crowdfunding_ETL/assets/144713762/064965dd-63fd-428d-b778-32423c93473a)
 
-3. Save the database schema as a Postgres file named `crowdfunding_db_schema.sql`, and save it to your GitHub repository.
+3. Save the database schema as a Postgres file named `crowdfunding_db_schema.sql`, and save it to GitHub repository.
 
 4. Create a new Postgres database, named `crowdfunding_db`.
 
@@ -85,6 +86,10 @@ Note: Remember to specify the data types, primary keys, foreign keys, and other 
 7. Import each CSV file into its corresponding SQL table.
 
 8. Verify that each table has the correct data by running a `SELECT` statement for each.
+![campaign_query](https://github.com/Pooja14n/Crowdfunding_ETL/assets/144713762/9bfacc27-7e51-43f3-b7f4-f58c7ee48a28)
+![subcategory_query](https://github.com/Pooja14n/Crowdfunding_ETL/assets/144713762/b5b5bad3-9052-4e04-948b-7dcc9710aea3)
+![contacts_query](https://github.com/Pooja14n/Crowdfunding_ETL/assets/144713762/99b2782c-fae8-4e59-976e-10512a2b4a66)
+![category_query](https://github.com/Pooja14n/Crowdfunding_ETL/assets/144713762/3de4c995-7bde-4b34-9e7a-06ca14291a13)
 
 
 
